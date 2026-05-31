@@ -25,9 +25,9 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html">Domů</a></li>
-                    <li><a href="about.html">O mně</a></li>
                     <li><a href="portfolio.html" class="active">Galerie</a></li>
                     <li><a href="custom.html">Na zakázku</a></li>
+                    <li><a href="about.html">O mně</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
@@ -40,7 +40,7 @@
     </header>
 
     <main class="bg-light">
-        <section class="subpage-hero" style="background-image: url('Pictures_neupravene/IMG-20260426-WA0012.jpg');">
+        <section class="subpage-hero" style="background-image: url('Pictures_neupravene/trhy.jpg');">
             <div class="subpage-hero-overlay"></div>
             <div class="container subpage-hero-content">
                 <h1 class="page-title">GALERIE</h1>
@@ -53,55 +53,187 @@
                 style="background: var(--color-white); padding: 2rem; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.08);">
 
                 <div class="portfolio-filter">
-                    <button class="filter-btn active">Vše</button>
-                    <button class="filter-btn">Hračky</button>
-                    <button class="filter-btn">Hodiny</button>
-                    <button class="filter-btn">Zahrada</button>
+                    <button class="filter-btn active" data-filter="all">Vše</button>
+                    <button class="filter-btn" data-filter="hracky">Hračky</button>
+                    <button class="filter-btn" data-filter="hodiny">Hodiny</button>
+                    <button class="filter-btn" data-filter="zahrada">Zahrada a dekorace</button>
                 </div>
 
                 <div class="portfolio-grid new-grid">
-                    <div class="portfolio-card new-card">
+                    <!-- HODINY -->
+                    <div class="portfolio-card new-card" data-category="hodiny">
                         <div class="card-image">
-                            <img src="Pictures_neupravene/IMG-20260426-WA0013.jpg" alt="Dřevěné hodiny" loading="lazy">
+                            <img src="Pictures_neupravene/hodiny_dominik.jpg" alt="Nástěnné hodiny Dominik" loading="lazy">
                         </div>
                         <div class="card-content new-content">
                             <div class="card-info">
-                                <h3>Nástěnné hodiny masiv</h3>
-                                <p>Ořechové dřevo, tichý strojek.</p>
+                                <h3>Nástěnné hodiny Dominik</h3>
+                                <p>Dubový masiv s výraznou kresbou dřeva, tichý strojek.</p>
                             </div>
                             <div class="card-price">1 500 Kč</div>
                         </div>
                     </div>
 
-                    <div class="portfolio-card new-card">
+                    <div class="portfolio-card new-card" data-category="hodiny">
                         <div class="card-image">
-                            <img src="Pictures_neupravene/IMG-20260426-WA0014.jpg" alt="Dřevěná hračka" loading="lazy">
+                            <img src="Pictures_neupravene/hodiny_je_cas_na_mansestr.jpg" alt="Nástěnné hodiny Je čas na manšestr" loading="lazy">
                         </div>
                         <div class="card-content new-content">
                             <div class="card-info">
-                                <h3>Dřevěné autíčko</h3>
-                                <p>Bukové dřevo, přírodní olej.</p>
+                                <h3>Nástěnné hodiny 'Je čas na manšestr'</h3>
+                                <p>Originální designové provedení z ořechového dřeva.</p>
                             </div>
-                            <div class="card-price">450 Kč</div>
+                            <div class="card-price">1 600 Kč</div>
                         </div>
                     </div>
 
-                    <div class="portfolio-card new-card">
+                    <div class="portfolio-card new-card" data-category="hodiny">
                         <div class="card-image">
-                            <img src="Pictures_neupravene/IMG-20260428-WA0001.jpg" alt="Dřevěná dekorace"
-                                loading="lazy">
+                            <img src="Pictures_neupravene/hodiny_je_cas_vyhrat.jpg" alt="Nástěnné hodiny Je čas vyhrát" loading="lazy">
                         </div>
                         <div class="card-content new-content">
                             <div class="card-info">
-                                <h3>Zahradní lucerna</h3>
-                                <p>Odolné modřínové dřevo.</p>
+                                <h3>Nástěnné hodiny 'Je čas vyhrát'</h3>
+                                <p>Masivní dřevo, elegantní kovové ručičky.</p>
+                            </div>
+                            <div class="card-price">1 700 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="hodiny">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/hodiny_krtecek.jpg" alt="Dětské hodiny Krteček" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Dětské hodiny Krteček</h3>
+                                <p>Ručně vyřezávané a malované hodiny pro nejmenší.</p>
+                            </div>
+                            <div class="card-price">1 200 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="hodiny">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/hodiny_traktor.jpg" alt="Dětské hodiny Traktor" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Dětské hodiny Traktor</h3>
+                                <p>Veselý motiv traktoru z překližky a masivu.</p>
+                            </div>
+                            <div class="card-price">1 300 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="hodiny">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/hodiny_v_krabici.jpg" alt="Nástěnné hodiny v dárkovém balení" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Nástěnné hodiny v balení</h3>
+                                <p>Dárkové balení masivních hodin, ideální jako dárek.</p>
+                            </div>
+                            <div class="card-price">1 800 Kč</div>
+                        </div>
+                    </div>
+
+                    <!-- HRAČKY -->
+                    <div class="portfolio-card new-card" data-category="hracky">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/vlacek_logs_na_stole.jpg" alt="Dřevěný vláček s kládami" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Dřevěný vláček s kládami</h3>
+                                <p>Tradiční hračka z tvrdého bukového dřeva.</p>
+                            </div>
+                            <div class="card-price">650 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="hracky">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/vlacky_na_stole.jpg" alt="Sada dřevěných vláčků" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Sada dřevěných vláčků</h3>
+                                <p>Ručně broušené lokomotivy a vagónky bez ostrých hran.</p>
                             </div>
                             <div class="card-price">890 Kč</div>
                         </div>
                     </div>
+
+                    <div class="portfolio-card new-card" data-category="hracky">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/vlacky_na_zahrade_karton.jpg" alt="Vláčky na zahradní dráze" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Vláčky na zahradní dráze</h3>
+                                <p>Odolná sada autíček a vláčků pro venkovní hraní.</p>
+                            </div>
+                            <div class="card-price">750 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="hracky">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/hodiny_na_zahrade.jpg" alt="Zahradní hodiny na hraní" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Zahradní hodiny na hraní</h3>
+                                <p>Hravé provedení hodin odolné vůči povětrnostním vlivům.</p>
+                            </div>
+                            <div class="card-price">1 400 Kč</div>
+                        </div>
+                    </div>
+
+                    <!-- ZAHRADA A DEKORACE -->
+                    <div class="portfolio-card new-card" data-category="zahrada">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/nvm_krysak.jpg" alt="Dřevěná figurka Krysák" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Dřevěná figurka Krysák</h3>
+                                <p>Stylová dekorace do interiéru i na krytou terasu.</p>
+                            </div>
+                            <div class="card-price">490 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="zahrada">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/nvm_lyzar.jpg" alt="Dřevěná figurka Lyžař" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Dřevěná figurka Lyžař</h3>
+                                <p>Zimní dekorace ručně vyřezaná z jednoho kusu dřeva.</p>
+                            </div>
+                            <div class="card-price">550 Kč</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card new-card" data-category="zahrada">
+                        <div class="card-image">
+                            <img src="Pictures_neupravene/nvm_lyzar_2.jpg" alt="Dřevěná figurka Lyžař II" loading="lazy">
+                        </div>
+                        <div class="card-content new-content">
+                            <div class="card-info">
+                                <h3>Dřevěná figurka Lyžař II</h3>
+                                <p>Detailně zpracovaná postavička lyžaře v dynamické póze.</p>
+                            </div>
+                            <div class="card-price">580 Kč</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="text-center" style="margin-top: 3rem;">
+                <div class="text-center" style="margin-top: 3rem; display: none;">
                     <a href="#" class="btn btn-outline"
                         style="border-color: #E89A3C; color: #E89A3C; font-weight: 600; padding: 1rem 3rem; border-radius: 30px; transition: all 0.3s;"
                         onmouseover="this.style.backgroundColor='#E89A3C'; this.style.color='#fff';"

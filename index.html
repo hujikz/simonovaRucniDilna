@@ -27,9 +27,9 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="active">Domů</a></li>
+                    <li><a href="portfolio.html">Galerie</a></li>
+                    <li><a href="custom.html">Na zakázku</a></li>
                     <li><a href="about.html">O mně</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="custom.html">Zakázková výroba</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
@@ -65,41 +65,74 @@
             </div>
         </section>
 
-        <!-- Hub/Signpost Section -->
-        <section class="hub bg-light" style="padding: 3rem 0; background-color: #EBEAE6;">
-            <div class="container">
-                <div class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
-                    <p style="color: var(--color-text); margin-bottom: 0.2rem; font-size: 0.9rem;">-Co u mě najdete</p>
-                    <h2
-                        style="font-family: var(--font-sans); color: var(--color-text); font-size: 1.1rem; font-weight: 400; margin: 0; letter-spacing: normal;">
-                        Ruční práce, přírodní materiály.</h2>
+        <!-- Home About Teaser Section -->
+        <section class="home-about section">
+            <div class="container home-about-container">
+                <div class="home-about-image">
+                    <img src="Pictures_neupravene/wooden_work_close_look_optimized.jpg" alt="Práce v dílně"
+                        style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
                 </div>
+                <div class="home-about-text">
+                    <h2
+                        style="font-family: var(--font-sans); color: #2C2C2C; font-size: 1.5rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px;">
+                        Kdo za tím stojí</h2>
+                    <h3
+                        style="font-size: 2rem; color: var(--color-text); margin-bottom: 1.5rem; font-family: var(--font-sans);">
+                        Vášeň pro dřevo a poctivé řemeslo</h3>
+                    <p
+                        style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem; color: var(--color-text-light);">
+                        Jsem student s obrovskou vášní pro řemeslo. Práce se dřevem je pro mě relaxací a způsobem, jak
+                        tvořit něco hmatatelného, krásného a trvanlivého. Věřím, že každý kus dřeva má svůj vlastní
+                        příběh, který čeká na objevení.</p>
+                    <a href="about.html" class="btn"
+                        style="border: 2px solid #2C2C2C; color: #2C2C2C; padding: 0.8rem 2rem; font-weight: 600; border-radius: 30px; transition: all 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#2C2C2C'; this.style.color='#fff';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#2C2C2C';">Přečíst celý
+                        příběh</a>
+                </div>
+            </div>
+        </section>
 
-                <div class="hub-grid">
-                    <a href="portfolio.html" class="hub-card">
-                        <div class="hub-card-img">
-                            <img src="Pictures_neupravene/hodiny_je_cas_na_mansestr.jpg" alt="Galerie">
+        <!-- Featured Products -->
+        <section class="featured-products section bg-light" style="padding-top: 2rem;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h2
+                        style="font-family: var(--font-sans); color: #2C2C2C; font-size: 2rem; text-transform: uppercase;">
+                        Ochutnávka z dílny</h2>
+                    <p style="color: var(--color-text-light);">Nejnovější kousky z mé tvorby</p>
+                </div>
+                <div class="featured-slider">
+                    <div class="featured-card">
+                        <div class="featured-img-wrap">
+                            <img src="Pictures_neupravene/hodiny_v_krabici.jpg" alt="Hodiny masiv Dominik">
                         </div>
-                        <div class="hub-card-title">Galerie</div>
-                    </a>
-                    <a href="custom.html" class="hub-card">
-                        <div class="hub-card-img">
-                            <img src="Pictures_neupravene/hodiny_v_krabici.jpg" alt="Na zakázku">
+                        <a href="portfolio.html?filter=hodiny" class="featured-bottom-bar">
+                            <span>Hodiny masiv &rarr;</span>
+                        </a>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-img-wrap">
+                            <img src="Pictures_neupravene/vlacek_logs_na_stole.jpg" alt="Dřevěné hračky">
                         </div>
-                        <div class="hub-card-title">Na zakázku</div>
-                    </a>
-                    <a href="contact.html" class="hub-card">
-                        <div class="hub-card-img">
-                            <img src="Pictures_neupravene/vlacek_logs_na_stole.jpg" alt="Kontakt">
+                        <a href="portfolio.html?filter=hracky" class="featured-bottom-bar">
+                            <span>Dřevěné hračky &rarr;</span>
+                        </a>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-img-wrap">
+                            <img src="Pictures_neupravene/nvm_lyzar.jpg" alt="Zahradní dekorace">
                         </div>
-                        <div class="hub-card-title">Kontakt</div>
-                    </a>
-                    <a href="about.html" class="hub-card">
-                        <div class="hub-card-img">
-                            <img src="Pictures_neupravene/trhy.jpg" alt="O mně">
-                        </div>
-                        <div class="hub-card-title">O mně</div>
-                    </a>
+                        <a href="portfolio.html?filter=zahrada" class="featured-bottom-bar">
+                            <span>Zahradní dekorace &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="portfolio.html" class="btn"
+                        style="background-color: #7E7559; color: #fff; border-radius: 30px; font-weight: 600; padding: 0.8rem 2.5rem; transition: background-color 0.3s;"
+                        onmouseover="this.style.backgroundColor='#8c836a';"
+                        onmouseout="this.style.backgroundColor='#7E7559';">Zobrazit celou galerii</a>
                 </div>
             </div>
         </section>
@@ -139,72 +172,6 @@
                         <h4 style="font-family: var(--font-sans); color: #fff; font-size: 1.1rem; letter-spacing: 1px;">
                             OSOBNÍ PŘÍSTUP</h4>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Home About Teaser Section -->
-        <section class="home-about section">
-            <div class="container home-about-container">
-                <div class="home-about-image">
-                    <img src="Pictures_neupravene/wooden_work_close_look_optimized.jpg" alt="Práce v dílně"
-                        style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-                </div>
-                <div class="home-about-text">
-                    <h2
-                        style="font-family: var(--font-sans); color: #E89A3C; font-size: 1.5rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px;">
-                        Kdo za tím stojí</h2>
-                    <h3
-                        style="font-size: 2rem; color: var(--color-text); margin-bottom: 1.5rem; font-family: var(--font-serif);">
-                        Vášeň pro dřevo a poctivé řemeslo</h3>
-                    <p
-                        style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem; color: var(--color-text-light);">
-                        Jsem student s obrovskou vášní pro řemeslo. Práce se dřevem je pro mě relaxací a způsobem, jak
-                        tvořit něco hmatatelného, krásného a trvanlivého. Věřím, že každý kus dřeva má svůj vlastní
-                        příběh, který čeká na objevení.</p>
-                    <a href="about.html" class="btn"
-                        style="border: 2px solid #E89A3C; color: #E89A3C; padding: 0.8rem 2rem; font-weight: 600; border-radius: 30px; transition: all 0.3s ease;"
-                        onmouseover="this.style.backgroundColor='#E89A3C'; this.style.color='#fff';"
-                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#E89A3C';">Přečíst celý
-                        příběh</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Products -->
-        <section class="featured-products section bg-light" style="padding-top: 2rem;">
-            <div class="container">
-                <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
-                    <h2
-                        style="font-family: var(--font-sans); color: #E89A3C; font-size: 2rem; text-transform: uppercase;">
-                        Ochutnávka z dílny</h2>
-                    <p style="color: var(--color-text-light);">Nejžádanější kousky z mé tvorby</p>
-                </div>
-                <div class="featured-slider">
-                    <a href="portfolio.html" class="featured-card">
-                        <img src="Pictures_neupravene/IMG-20260426-WA0008.jpg" alt="Produkt 1">
-                        <div class="featured-overlay">
-                            <span>Hodiny masiv</span>
-                        </div>
-                    </a>
-                    <a href="portfolio.html" class="featured-card">
-                        <img src="Pictures_neupravene/IMG-20260426-WA0009.jpg" alt="Produkt 2">
-                        <div class="featured-overlay">
-                            <span>Dřevěné hračky</span>
-                        </div>
-                    </a>
-                    <a href="portfolio.html" class="featured-card">
-                        <img src="Pictures_neupravene/IMG-20260426-WA0010.jpg" alt="Produkt 3">
-                        <div class="featured-overlay">
-                            <span>Zahradní dekorace</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="text-center" style="margin-top: 3rem;">
-                    <a href="portfolio.html" class="btn"
-                        style="background-color: #7E7559; color: #fff; border-radius: 30px; font-weight: 600; padding: 0.8rem 2.5rem; transition: background-color 0.3s;"
-                        onmouseover="this.style.backgroundColor='#8c836a';"
-                        onmouseout="this.style.backgroundColor='#7E7559';">Zobrazit celou galerii</a>
                 </div>
             </div>
         </section>
