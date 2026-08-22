@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="Pictures_neupravene/favicon_48.ico">
+    <script src="form.js"></script>
 </head>
 
 <body>
@@ -110,31 +111,40 @@
                     </div>
 
                     <div class="custom-form-part">
-                        <form class="clean-form" onsubmit="event.preventDefault(); alert('Děkuji za zprávu!');">
+                        <form class="clean-form" id="kontaktni-formular" name="kontakt" method="POST" data-netlify="true"
+                            netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="kontakt">
+                            <p style="display:none;">
+                                <label>Nevyplňujte toto pole: <input name="bot-field"></label>
+                            </p>
+                    
                             <div class="form-group-clean">
                                 <label>JMÉNO A PŘÍJMENÍ <span class="required">*</span></label>
-                                <input type="text" required>
+                                <input type="text" name="jmeno" required>
                             </div>
                             <div class="form-group-clean">
                                 <label>EMAIL <span class="required">*</span></label>
-                                <input type="email" required>
+                                <input type="email" name="email" required>
                             </div>
                             <div class="form-group-clean">
                                 <label>TELEFON</label>
-                                <input type="tel">
+                                <input type="tel" name="telefon">
                             </div>
                             <div class="form-group-clean">
-                                <label>CENA</label>
-                                <input type="text">
+                                <label>ROZPOČET</label>
+                                <input type="text" name="rozpocet">
                             </div>
                             <div class="form-group-clean">
                                 <label>ZPRÁVA <span class="required">*</span></label>
-                                <textarea rows="4" required></textarea>
+                                <textarea rows="4" name="zprava" required></textarea>
                             </div>
+                    
                             <button type="submit" class="btn"
                                 style="margin-top: 1rem; width: 100%; border: 2px solid #E89A3C; color: #E89A3C; background: transparent; transition: all 0.3s;"
                                 onmouseover="this.style.backgroundColor='#E89A3C'; this.style.color='#fff';"
                                 onmouseout="this.style.backgroundColor='transparent'; this.style.color='#E89A3C';">Odeslat</button>
+                    
+                            <p id="form-status" style="margin-top: 1rem; display: none;"></p>
                         </form>
                     </div>
                 </div>
